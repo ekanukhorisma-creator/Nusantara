@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusantara Trans | Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="pt-20 bg-gray-50">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-2xl font-bold text-gray-800">
+      Nusantara <span class="text-yellow-500">Trans</span>
+    </h1>
+
+    <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <a href="index.html" class="hover:text-yellow-500">Beranda</a>
+      <a href="armada.html" class="hover:text-yellow-500">Armada</a>
+      <a href="review.html" class="text-yellow-500 font-semibold">Review</a>
+      <a href="kontak.html" class="hover:text-yellow-500">Kontak</a>
+    </nav>
+
+    <button id="menu-btn" class="md:hidden">
+      <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- MENU MOBILE -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <a href="indexx.html" class="block px-6 py-3 hover:bg-gray-100">Beranda</a>
+    <a href="armada.html" class="block px-6 py-3 hover:bg-gray-100">Armada</a>
+    <a href="review.html" class="block px-6 py-3 bg-gray-100 font-semibold">Review</a>
+    <a href="kontak.html" class="block px-6 py-3 hover:bg-gray-100">Kontak</a>
+  </div>
+</header>
+
+<!-- JUDUL -->
+<section class="py-12 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-2">
+    Review Pelanggan
+  </h2>
+  <p class="text-gray-600">
+    Masukan dan pengalaman pelanggan kami
+  </p>
+</section>
+
+<!-- DAFTAR REVIEW -->
+<section class="container mx-auto px-6 mb-16">
+  <div id="review-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- REVIEW DEFAULT -->
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h4 class="font-semibold mb-1">Andi Pratama</h4>
+      <p class="text-yellow-500 mb-2">★★★★★</p>
+      <p class="text-gray-600">
+        Mobil bersih, pelayanan ramah, sangat direkomendasikan!
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h4 class="font-semibold mb-1">Siti Aisyah</h4>
+      <p class="text-yellow-500 mb-2">★★★★☆</p>
+      <p class="text-gray-600">
+        Harga terjangkau dan proses pemesanan mudah.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FORM REVIEW -->
+<section class="bg-white py-16">
+  <div class="container mx-auto px-6 max-w-xl">
+    <h3 class="text-2xl font-bold mb-6 text-center">
+      Beri Masukan Anda
+    </h3>
+
+    <form id="review-form" class="space-y-4">
+      <input type="text" id="nama" placeholder="Nama Anda"
+        class="w-full border rounded-lg px-4 py-2" required>
+
+      <select id="rating"
+        class="w-full border rounded-lg px-4 py-2" required>
+        <option value="">Rating</option>
+        <option value="5">★★★★★ - Sangat Puas</option>
+        <option value="4">★★★★☆ - Puas</option>
+        <option value="3">★★★☆☆ - Cukup</option>
+        <option value="2">★★☆☆☆ - Kurang</option>
+        <option value="1">★☆☆☆☆ - Sangat Buruk</option>
+      </select>
+
+      <textarea id="pesan" rows="4" placeholder="Tulis ulasan Anda..."
+        class="w-full border rounded-lg px-4 py-2" required></textarea>
+
+      <button type="submit"
+        class="w-full bg-yellow-500 py-3 rounded-lg font-semibold hover:bg-yellow-400">
+        Kirim Review
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- SCRIPT -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  const form = document.getElementById('review-form');
+  const reviewList = document.getElementById('review-list');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nama = document.getElementById('nama').value;
+    const rating = document.getElementById('rating').value;
+    const pesan = document.getElementById('pesan').value;
+
+    const stars = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+
+    const reviewCard = `
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold mb-1">${nama}</h4>
+        <p class="text-yellow-500 mb-2">${stars}</p>
+        <p class="text-gray-600">${pesan}</p>
+      </div>
+    `;
+
+    reviewList.insertAdjacentHTML('afterbegin', reviewCard);
+    form.reset();
+  });
+</script>
+
+</body>
+</html>

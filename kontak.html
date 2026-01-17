@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusantara Trans | Kontak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="pt-20 bg-gray-50">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-2xl font-bold text-gray-800">
+      Nusantara <span class="text-yellow-500">Trans</span>
+    </h1>
+
+    <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <a href="index.html" class="hover:text-yellow-500">Beranda</a>
+      <a href="armada.html" class="hover:text-yellow-500">Armada</a>
+      <a href="review.html" class="hover:text-yellow-500">Review</a>
+      <a href="contact.html" class="text-yellow-500 font-semibold">Kontak</a>
+    </nav>
+
+    <button id="menu-btn" class="md:hidden">
+      <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- MENU MOBILE -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <a href="indexx.html" class="block px-6 py-3 hover:bg-gray-100">Beranda</a>
+    <a href="armada.html" class="block px-6 py-3 hover:bg-gray-100">Armada</a>
+    <a href="review.html" class="block px-6 py-3 hover:bg-gray-100">Review</a>
+    <a href="kontak.html" class="block px-6 py-3 bg-gray-100 font-semibold">Kontak</a>
+  </div>
+</header>
+
+<!-- JUDUL -->
+<section class="py-12 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-2">
+    Kontak & Alamat Resmi
+  </h2>
+  <p class="text-gray-600">
+    Hubungi kami hanya melalui kontak resmi berikut
+  </p>
+</section>
+
+<!-- KONTEN -->
+<section class="container mx-auto px-6 pb-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <!-- INFO KONTAK -->
+    <div class="bg-white p-8 rounded-xl shadow">
+      <h3 class="text-2xl font-semibold mb-6">Kontak Resmi</h3>
+
+      <p class="mb-3">
+        📞 <strong>Telepon / WhatsApp:</strong><br>
+        <span class="text-lg font-semibold text-green-600">
+          0895-4295-79625
+        </span>
+      </p>
+
+      <p class="mb-3">
+        📧 <strong>Email:</strong><br>
+        nusantaratrans@gmail.com
+      </p>
+
+      <p class="mb-6">
+        ⏰ <strong>Jam Operasional:</strong><br>
+        Senin – Minggu (08.00 – 00.00)
+      </p>
+
+      <a href="https://wa.me/62895429579625"
+         target="_blank"
+         class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600">
+        Chat WhatsApp Resmi
+      </a>
+    </div>
+
+    <!-- ALAMAT & MAP -->
+    <div class="bg-white p-8 rounded-xl shadow">
+      <h3 class="text-2xl font-semibold mb-6">Alamat Kantor</h3>
+
+      <p class="mb-4">
+        📍 Jl. Petir Sokaraja Banyu<br>
+        Purwokerto, Jawa Tengah Indonesia
+      </p>
+
+      <iframe
+        src="https://maps.app.goo.gl/DUPjaczAXWQTzHnm8"
+        class="w-full h-64 rounded-lg border"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- POPUP PERINGATAN PENIPUAN -->
+<div id="warning-popup"
+     class="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+  <div class="bg-white max-w-md mx-4 p-6 rounded-xl shadow-lg text-center">
+    <h3 class="text-2xl font-bold text-red-600 mb-4">
+      ⚠️ Waspada Penipuan!
+    </h3>
+    <p class="mb-4 text-gray-700">
+      Kami <strong>tidak bertanggung jawab</strong> atas transaksi melalui
+      nomor selain yang tertera di website ini.
+    </p>
+    <p class="mb-6 font-semibold text-gray-800">
+      Nomor resmi Nusantara Trans hanya:
+      <br>
+      <span class="text-green-600 text-lg">
+       0895-4295-79625
+      </span>
+    </p>
+
+    <button onclick="closePopup()"
+      class="bg-yellow-500 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+      Saya Mengerti
+    </button>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  function closePopup() {
+    document.getElementById('warning-popup').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

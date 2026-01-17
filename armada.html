@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusantara Trans | Armada</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="pt-20 bg-gray-50">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-2xl font-bold text-gray-800">
+      Nusantara <span class="text-yellow-500">Trans</span>
+    </h1>
+
+    <nav class="hiddxen md:flex space-x-8 font-medium text-gray-700">
+      <a href="indexx.html" class="hover:text-yellow-500">Beranda</a>
+      <a href="armada.html" class="text-yellow-500 font-semibold">Armada</a>
+      <a href="review.html" class="hover:text-yellow-500">Review</a>
+      <a href="kontak.html" class="hover:text-yellow-500">Kontak</a>
+    </nav>
+
+    <button id="menu-btn" class="md:hidden">
+      <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <a href="indexx.html" class="block px-6 py-3 hover:bg-gray-100">Beranda</a>
+    <a href="armada.html" class="block px-6 py-3 bg-gray-100 font-semibold">Armada</a>
+    <a href="review.html" class="block px-6 py-3 hover:bg-gray-100">Review</a>
+    <a href="kontak.html" class="block px-6 py-3 hover:bg-gray-100">Kontak</a>
+  </div>
+</header>
+
+<!-- ================= HERO ARMADA ================= -->
+<section class="relative h-[80vh] flex items-center justify-center text-center overflow-hidden">
+
+  <!-- Background Image -->
+  <img src="image/BG.png"
+       class="absolute inset-0 w-full h-full object-cover" alt="Armada">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 px-6 max-w-5xl">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+      Temukan Kendaraan yang Sesuai<br>
+      <span class="text-yellow-400">dengan Gaya Anda</span>
+    </h1>
+
+    <p class="text-gray-200 text-lg mb-8">
+      Armada kami terawat dengan baik, siap memberikan kenyamanan,
+      keamanan, dan pengalaman perjalanan terbaik untuk Anda.
+    </p>
+
+    <a href="#daftar-armada"
+       class="inline-block bg-yellow-500 text-black font-semibold px-10 py-3 rounded-lg hover:bg-yellow-400 transition">
+      Lihat Armada
+    </a>
+  </div>
+</section>
+
+<!-- ================= JUDUL ARMADA ================= -->
+<section class="py-14 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-2">
+    Armada Mobil Kami
+  </h2>
+  <p class="text-gray-600">
+    Pilihan kendaraan terbaik untuk segala kebutuhan perjalanan
+  </p>
+</section>
+
+<!-- ================= GRID ARMADA ================= -->
+<section id="daftar-armada" class="container mx-auto px-6 pb-20">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- CARD 1 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/calya.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Calya</h3>
+        <p class="text-gray-600 mb-3">Manual • 7 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 350.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20Calya"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/black.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Daihatsu Xenia</h3>
+        <p class="text-gray-600 mb-3">Manual • 7 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 350.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Daihatsu%20Xenia"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/innova.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Toyota Innova</h3>
+        <p class="text-gray-600 mb-3">Automatic • 7 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 600.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20Inova"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/AVANZA MATC.jpeg" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">AVANZA NEW</h3>
+        <p class="text-gray-600 mb-3">Manual • 7 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 350.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20Avanza"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/AVANZA MATC.jpeg" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">AVANZA NEW</h3>
+        <p class="text-gray-600 mb-3">Matic • 7 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 400.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20Avanza"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/Hiace.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">hiace</h3>
+        <p class="text-gray-600 mb-3">Manual • 15 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 1.000.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20Hiace"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/zenix.avif" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">zenix</h3>
+        <p class="text-gray-600 mb-3">Manual • 4 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 800.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20Zenix"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/daihatsu-terios-color-969804.avif" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">TERIOS</h3>
+        <p class="text-gray-600 mb-3">Manual • 4 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 400.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Daihatsu%20Terios"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/mitsubishi-xpander-color-381127.avif" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">XPANDER</h3>
+        <p class="text-gray-600 mb-3">Manual • 4 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 400.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Mitsubishi%20Xpander"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/Hiace-Premio-Luxury-bali-midori.jpg" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">HIACE PREMIO</h3>
+        <p class="text-gray-600 mb-3">Manual • 14 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 1.200.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20HiacePremio"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/suzuki-ertiga-hitam.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">ERTIGA</h3>
+        <p class="text-gray-600 mb-3">Manual • 4 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 400.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Suzuki%20Ertiga"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/BRIO.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">BRIO</h3>
+        <p class="text-gray-600 mb-3">Matic • 3 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 350.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Honda%20Brio"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/Elf-LONG-GIGA.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">ELF LONG</h3>
+        <p class="text-gray-600 mb-3">Manual • 19 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 1.000.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Izuzu%20ElfLong"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/alphad.jpeg" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">ALPHARD</h3>
+        <p class="text-gray-600 mb-3">Matic • 3 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 2.500.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Toyota%20Alphard"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition armada-item opacity-0 translate-y-10">
+      <img src="image/daihatsu-new-sigra-dark-black.png" class="rounded-t-xl h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">SIGRA</h3>
+        <p class="text-gray-600 mb-3">Manual • 4 Kursi • AC</p>
+        <p class="text-yellow-500 font-bold text-lg mb-4">
+          Rp 350.000 / hari
+        </p>
+        <a href="https://wa.me/62895429579625?text=Halo%20Nusantara%20Trans,%20saya%20ingin%20memesan%20Daihatsu%20Sigra"
+           target="_blank"
+           class="block text-center bg-yellow-500 py-2 rounded-lg font-semibold hover:bg-yellow-400">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+       
+
+  </div>
+</section>
+
+<section class="bg-white py-14">
+  <div class="container mx-auto px-6 text-center max-w-3xl">
+    <h3 class="text-2xl font-bold mb-4">
+      Nusantara Trans Siap Melayani Anda
+    </h3>
+    <p class="text-gray-600 leading-relaxed">
+      Sewa Mobil Lepas kunci
+      Sewa Mobil + Driver
+      Sewa Mobil Harian, Mingguan,Bulanan,
+      Antar Jemput Bandara
+      Open Trip
+    </p>
+  </div>
+</section>
+
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  // MENU MOBILE
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // ANIMASI ARMADA SAAT SCROLL
+  const items = document.querySelectorAll('.armada-item');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-10');
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+        entry.target.style.transition = 'all 0.8s ease';
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(item => observer.observe(item));
+
+  
+</script>
+
+</body>
+</html>
